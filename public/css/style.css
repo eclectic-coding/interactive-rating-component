@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #131518;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  display: grid;
+  grid-template-areas: "main" "footer";
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 25rem;
+  height: 26rem;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
