@@ -6,12 +6,67 @@
   width: 25rem;
   height: 26rem;
   background: $black-gradient;
-
-  &__title {
-
-  }
+  border-radius: 30px;
 
   &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &--badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: $color-dark-blue;
+    }
+
+    &--title {
+      display: flex;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.75rem;
+    }
+
+    &--content {
+      display: flex;
+      color: $color-light-gray;
+    }
+
+    &--selection {
+      display: flex;
+      justify-content: space-around;
+
+      &-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background-color: $color-dark-blue;
+        color: $color-medium-gray;
+
+        &:hover {
+          background-color: $color-orange;
+          color: $color-pure-white;
+        }
+      }
+    }
+
+    &--btn {
+
+    }
 
   }
+}
+
+.active {
+  background-color: $color-medium-gray;
+  color: $color-pure-white;
 }
