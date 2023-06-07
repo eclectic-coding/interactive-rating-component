@@ -1,0 +1,48 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsl(213, 19%, 18%);
+  --color-dark-blue: hsl(216, 12%, 54%);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+  --color-black: hsl(0, 0%, 0%);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--color-very-dark-blue);
+  --color-card-background: var(--color-black);
+
+  --text-card-header: var(--color-white);
+  --text-card-body: var(--color-light-grey);
+  --text-number: var(--color-medium-grey);
+  --text-submit: var(--color-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.grid-container {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 50px;
+  grid-template-areas: "main" "footer";
+}
