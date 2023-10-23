@@ -1,12 +1,11 @@
-<script setup>
-import TheFooter from "@/components/Footer.vue";
-</script>
-
 <template>
-  <h1>Hello world</h1>
+  <TheCard />
   <TheFooter />
 </template>
 
-<style scoped>
+<script setup>
+import TheFooter from "@/components/Footer.vue";
+import TheCard from "@/components/Card.vue";
+</script>
 
-</style>
+<style scoped></style>

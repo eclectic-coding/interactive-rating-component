@@ -14,7 +14,7 @@
   --color-background: var(--color-very-dark-blue);
   --color-card-background: var(--color-black);
 
-  --text-card-header: var(--color-white);
+  --text-card-heading: var(--color-white);
   --text-card-body: var(--color-light-grey);
   --text-number: var(--color-medium-grey);
   --text-submit: var(--color-white);
@@ -29,13 +29,10 @@
 }
 
 body {
-
   min-height: 100vh;
-  color: var(--color-text);
   background: var(--color-background);
-  line-height: 1.6;
   font-family: 'Overpass', sans-serif;
-  font-size: 15px;
+  color: var(--text-card-heading);
 }
 
 .grid-container {
@@ -45,4 +42,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 50px;
   grid-template-areas: "main" "footer";
+
+  justify-items: center;
+  align-items: center;
 }
